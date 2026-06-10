@@ -50,7 +50,7 @@ export function SiteFooter() {
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Especialistas en preparar a las PyMEs de Rio Negro y Neuquén para acceder a
+              Especialistas en preparar a las PyMEs de todo el país para acceder a
               financiamiento bancario y SGR con la Carpeta Bancaria Ampliada.
             </p>
           </div>

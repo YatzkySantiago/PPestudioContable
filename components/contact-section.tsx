@@ -52,7 +52,7 @@ export function ContactSection() {
               href={getWhatsappUrl()}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex w-fit items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+              className="inline-flex w-fit items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
             >
               <MessageCircle className="h-4 w-4" />
               Escribir por WhatsApp
@@ -135,7 +135,7 @@ export function ContactSection() {
 
             <button
               type="submit"
-              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+              className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
             >
               <Send className="h-4 w-4" />
               Enviar consulta
