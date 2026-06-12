@@ -8,6 +8,11 @@ export const siteConfig = {
     "Hola, quiero más información sobre el servicio de Carpeta Bancaria Ampliada para mi Pyme.",
   email: "lorem@ipsum.com.ar",
   address: "General Fernandez Oro, Río Negro, Argentina",
+  // Formulario de Google al que se redirige a los clientes
+  formUrl:
+    "https://docs.google.com/forms/d/1PYAp_nsqB9DF_9oKdLap7Oa5I6oXOrgsQALDEWSB5Gw/viewform",
+  // ID del video de YouTube a incrustar (reemplazar por el real)
+  youtubeId: "dQw4w9WgXcQ",
   social: {
     instagram: "https://instagram.com",
     facebook: "https://facebook.com",

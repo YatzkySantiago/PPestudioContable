@@ -1,5 +1,5 @@
-import { ArrowRight, MessageCircle } from "lucide-react"
-import { getWhatsappUrl } from "@/lib/site-config"
+import { ArrowRight, FileText } from "lucide-react"
+import { siteConfig } from "@/lib/site-config"
 
 export function Hero() {
   return (
@@ -10,20 +10,18 @@ export function Hero() {
         </h1>
 
         <p className="max-w-xl text-pretty text-lg font-medium leading-relaxed text-foreground sm:text-xl">
-          Confeccionamos y gestionamos tu Carpeta Bancaria Ampliada para que
-          accedas de forma ágil a financiamiento bancario y SGR, con tasas
-          preferenciales.
+          Con nuestro método único confeccionamos y gestionamos tu Carpeta Bancaria Ampliada para que accedas de forma ágil y simple al financiamiento
         </p>
 
         <div className="flex flex-col gap-3 sm:flex-row">
             <a
-              href={getWhatsappUrl()}
+              href={siteConfig.formUrl}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
             >
-              <MessageCircle className="h-4 w-4" />
-              Hablar por WhatsApp
+              <FileText className="h-4 w-4" />
+              Completar el formulario
             </a>
             <a
               href="#servicio"

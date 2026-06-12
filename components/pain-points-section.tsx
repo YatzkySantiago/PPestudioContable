@@ -1,69 +1,70 @@
+import Image from "next/image"
 import { FileText, AlertTriangle, FileStack, Clock } from "lucide-react"
 
 const painPoints = [
   {
     icon: AlertTriangle,
     title: "Desconocimiento técnico",
-    text: "Muchas Pymes ignoran herramientas de financiamiento como las SGR o los convenios de tasas preferenciales.",
+    text: "Muchas Pymes ignoran herramientas de financiamiento como las Sociedades de Garantías Recíprocas (SGR), convenios de tasas preferenciales, Centro Pymes.",
+    image: "/pain-desconocimiento.png",
+    alt: "Trabajador de empresa de servicios petroleros revisando documentación financiera",
   },
   {
     icon: Clock,
     title: "Falta de actualización",
-    text: "Se recuerda la carpeta bancaria recién cuando se necesita el capital con urgencia, con balances desactualizados.",
+    text: "Se recuerda la carpeta bancaria recién cuando se necesita hacer frente a un contrato, renovar alguna maquinaria o la compra de alguna unidad nueva.",
+    image: "/pain-actualizacion.png",
+    alt: "Campo petrolero al atardecer en Vaca Muerta con sensación de urgencia",
   },
   {
     icon: FileStack,
     title: "Burocracia y deserción",
     text: "La excesiva carga documental exigida por los bancos genera frustración y abandono del proceso.",
+    image: "/pain-burocracia.png",
+    alt: "Pilas de papeleo burocrático en un entorno industrial de petróleo y gas",
   },
   {
     icon: FileText,
     title: "Soporte contable saturado",
     text: "Los estudios tradicionales, ocupados con impuestos, postergan la documentación financiera y pierden oportunidades.",
+    image: "/pain-soporte.png",
+    alt: "Contador saturado de trabajo con documentos impositivos y carpetas",
   },
 ]
 
 export function PainPointsSection() {
   return (
     <section id="problema" className="bg-muted/40 py-20 lg:py-28">
-      <div className="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16">
-        {/* Columna izquierda: título sticky que acompaña el scroll */}
-        <div className="lg:sticky lg:top-24 lg:h-fit">
-          <span className="text-sm font-medium text-primary">
-            El problema que resolvemos
-          </span>
-          <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            Los obstáculos que frenan el acceso al crédito
-          </h2>
-          <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground">
-            Identificamos las barreras más frecuentes que enfrentan las Pymes y
-            las resolvemos antes de que lleguen al evaluador de riesgo.
-          </p>
-        </div>
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
 
-        {/* Columna derecha: tarjetas en columna unidas por una línea vertical */}
-        <div className="relative">
-          <span
-            aria-hidden="true"
-            className="absolute bottom-4 left-[1.375rem] top-4 w-px bg-border"
-          />
-          <ul className="flex flex-col gap-6">
-            {painPoints.map((item) => (
-              <li key={item.title} className="group relative flex gap-5">
-                <div className="relative z-10 flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border bg-card text-primary transition-colors duration-300 ease-out group-hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {painPoints.map((item) => (
+            <article
+              key={item.title}
+              className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-[transform,box-shadow,border-color] duration-300 ease-out will-change-transform hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/5"
+            >
+              <div className="relative aspect-[4/3] overflow-hidden">
+                <Image
+                  src={item.image || "/placeholder.svg"}
+                  alt={item.alt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                />
+                <div className="absolute left-3 top-3 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-md transition-colors duration-300 group-hover:bg-accent group-hover:text-accent-foreground">
                   <item.icon className="h-5 w-5" />
                 </div>
-                <div className="rounded-2xl border border-border bg-card p-5 transition-[transform,box-shadow,border-color] duration-300 ease-out will-change-transform group-hover:-translate-y-1 group-hover:border-primary/40 group-hover:shadow-lg group-hover:shadow-primary/5">
-                  <h3 className="text-base font-semibold text-card-foreground">
-                    {item.title}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {item.text}
-                  </p>
-                </div>
-              </li>
-            ))}
-          </ul>
+              </div>
+              <div className="flex flex-1 flex-col p-5">
+                <h3 className="text-base font-semibold text-card-foreground">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {item.text}
+                </p>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
