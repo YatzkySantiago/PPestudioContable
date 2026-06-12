@@ -128,3 +128,27 @@
     @apply font-sans;
   }
 }
+
+@keyframes painCrossfade {
+  0%,
+  42% {
+    opacity: 1;
+  }
+  50%,
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-pain-crossfade {
+  animation: painCrossfade 7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-pain-crossfade {
+    animation: none;
+  }
+}
