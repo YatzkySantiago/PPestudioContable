@@ -4,28 +4,28 @@ import { FileText, AlertTriangle, FileStack, Clock } from "lucide-react"
 const painPoints = [
   {
     icon: AlertTriangle,
-    title: "Desconocimiento técnico",
+    title: "",
     text: "Muchas Pymes ignoran herramientas de financiamiento como las Sociedades de Garantías Recíprocas (SGR), convenios de tasas preferenciales, Centro Pymes.",
     image: "/pain-desconocimiento.png",
     alt: "Trabajador de empresa de servicios petroleros revisando documentación financiera",
   },
   {
     icon: Clock,
-    title: "Falta de actualización",
+    title: "",
     text: "Se recuerda la carpeta bancaria recién cuando se necesita hacer frente a un contrato, renovar alguna maquinaria o la compra de alguna unidad nueva.",
     image: "/pain-actualizacion.png",
     alt: "Campo petrolero al atardecer en Vaca Muerta con sensación de urgencia",
   },
   {
     icon: FileStack,
-    title: "Burocracia y deserción",
+    title: "",
     text: "La excesiva carga documental exigida por los bancos genera frustración y abandono del proceso.",
     image: "/pain-burocracia.png",
     alt: "Pilas de papeleo burocrático en un entorno industrial de petróleo y gas",
   },
   {
     icon: FileText,
-    title: "Soporte contable saturado",
+    title: "",
     text: "Los estudios tradicionales, ocupados con impuestos, postergan la documentación financiera y pierden oportunidades.",
     image: "/pain-soporte.png",
     alt: "Contador saturado de trabajo con documentos impositivos y carpetas",
