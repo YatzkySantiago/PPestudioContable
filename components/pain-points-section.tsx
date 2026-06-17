@@ -5,7 +5,7 @@ const painPoints = [
   {
     icon: AlertTriangle,
     title: "",
-    text: "Muchas Pymes ignoran herramientas de financiamiento como las Sociedades de Garantías Recíprocas (SGR), convenios de tasas preferenciales, Centro Pymes.",
+    text: "Muchas Pymes ignoran herramientas de financiamiento como las Sociedades de Garantías Recíprocas (SGR), Fondos de Garantías Provinciales y Convenios Pronvinciales de tasas preferenciales.",
     image: "/pain1A.webp",
     imageTop: "/pain1B.webp",
     alt: "Equipos de trabajo de Pymes de servicios realizando sus tareas",

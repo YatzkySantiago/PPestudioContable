@@ -2,11 +2,8 @@ export const siteConfig = {
   studioName: "Estudio Contable Patricia Perez",
   serviceName: "Carpeta Bancaria Ampliada",
   // Reemplazar con datos reales
-  phone: "+54 9 294 000 0000",
-  whatsappNumber: "5492940000000",
-  whatsappMessage:
-    "Hola, quiero más información sobre el servicio de Carpeta Bancaria Ampliada para mi Pyme.",
-  email: "lorem@ipsum.com.ar",
+  phone: "+54 9 299 413 9806",
+  email: "estudiopperez@gmail.com",
   address: "General Fernandez Oro, Río Negro, Argentina",
   // Formulario de Google al que se redirige a los clientes
   formUrl:
@@ -14,13 +11,7 @@ export const siteConfig = {
   // ID del video de YouTube a incrustar (reemplazar por el real)
   youtubeId: "dQw4w9WgXcQ",
   social: {
-    instagram: "https://instagram.com",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
+    instagram: "https://www.instagram.com/oroestudiopperez",
+    facebook: "https://www.facebook.com/patriciaperezcontadorpublico",
   },
-}
-
-export function getWhatsappUrl() {
-  const text = encodeURIComponent(siteConfig.whatsappMessage)
-  return `https://wa.me/${siteConfig.whatsappNumber}?text=${text}`
 }

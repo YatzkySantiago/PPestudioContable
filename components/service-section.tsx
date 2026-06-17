@@ -49,7 +49,7 @@ export function ServiceSection() {
               Dá el primer paso hacia tu financiamiento
             </h3>
             <p className="mx-auto mt-3 max-w-md text-pretty text-center text-base leading-relaxed text-muted-foreground">
-              Completa el formulario, agendamos un sesión y te cuento como lo hacemos!!
+              Completa el formulario, agendamos una sesión y te cuento como lo hacemos!!
             </p>
             <a
               href={siteConfig.formUrl}

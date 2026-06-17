@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
-import { getWhatsappUrl, siteConfig } from "@/lib/site-config"
+import { siteConfig } from "@/lib/site-config"
 
 const navLinks = [
   { label: "Problema", href: "#problema" },
@@ -38,7 +38,7 @@ export function SiteHeader() {
         </nav>
 
         <a
-          href={getWhatsappUrl()}
+          href={siteConfig.formUrl}
           target="_blank"
           rel="noreferrer"
           className="hidden rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground md:inline-flex"
@@ -70,7 +70,7 @@ export function SiteHeader() {
               </a>
             ))}
             <a
-              href={getWhatsappUrl()}
+              href={siteConfig.formUrl}
               target="_blank"
               rel="noreferrer"
               className="mt-2 rounded-full bg-primary px-5 py-2.5 text-center text-sm font-medium text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
