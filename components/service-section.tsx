@@ -4,37 +4,15 @@ import { siteConfig } from "@/lib/site-config"
 export function ServiceSection() {
   return (
     <section id="servicio" className="bg-background py-20 lg:py-28">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <div className="mx-auto max-w-2xl px-4 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <span className="text-sm font-medium text-primary">El servicio</span>
           <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
             Nosotros tenemos la solución y queremos ayudarte!
           </h2>
         </div>
-        <div className="mt-12 grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
-          {/* Columna izquierda: video explicativo de YouTube */}
-          <div className="flex flex-col">
-            <p className="text-sm text-muted-foreground">
-              Mirá el video para más información
-            </p>
-            <div className="relative mt-4 aspect-video overflow-hidden rounded-2xl border border-border bg-muted shadow-sm">
-              <iframe
-                className="absolute inset-0 h-full w-full"
-                src={`https://www.youtube.com/embed/${siteConfig.youtubeId}?start=307&end=435&controls=0`}
-                title="Conocé la Carpeta Bancaria Ampliada"
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                loading="lazy"
-              />
-            </div>
-          </div>
-
+        <div className="mt-12 items-start">
           {/* Columna derecha: CTA al formulario de Google */}
           <div className="flex flex-col">
-            {/* Subtítulo invisible para alinear la tarjeta con el alto del video */}
-            <p aria-hidden="true" className="invisible hidden text-sm lg:block">
-              &nbsp;
-            </p>
             <div
               id="contacto"
               className="group relative mt-4 flex scroll-mt-24 flex-col justify-center overflow-hidden rounded-2xl border border-border bg-card p-8 text-left transition-[transform,box-shadow,border-color] duration-300 ease-out will-change-transform hover:-translate-y-1 hover:border-accent hover:shadow-xl hover:shadow-accent/10 sm:px-12 lg:aspect-video lg:p-8"

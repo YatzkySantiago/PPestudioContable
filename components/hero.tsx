@@ -12,24 +12,15 @@ export function Hero() {
         <p className="max-w-xl text-pretty text-lg font-medium leading-relaxed text-foreground sm:text-xl">
           Confeccionamos y gestionamos tu Carpeta Crediticia Ampliada para que accedas de forma ágil y simple al financiamiento
         </p>
-
-        <div className="flex flex-col gap-3 sm:flex-row">
-            <a
-              href={siteConfig.formUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-accent hover:text-accent-foreground"
-            >
-              <FileText className="h-4 w-4" />
-              Completar el formulario
-            </a>
-            <a
-              href="#servicio"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-border bg-background px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-muted"
-            >
-              Conocer el servicio
-              <ArrowRight className="h-4 w-4" />
-          </a>
+        <div className="relative mt-6 aspect-video w-full max-w-2xl overflow-hidden rounded-2xl border border-border bg-muted shadow-sm">
+          <iframe
+            className="absolute inset-0 h-full w-full"
+            src={`https://www.youtube.com/embed/${siteConfig.youtubeId}?start=307&end=435&controls=0`}
+            title="Conocé la Carpeta Bancaria Ampliada"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
