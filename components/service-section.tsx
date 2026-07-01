@@ -8,13 +8,9 @@ export function ServiceSection() {
         <div className="mx-auto max-w-2xl text-center">
           <span className="text-sm font-medium text-primary">El servicio</span>
           <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-            ¿Buscás crecer o desembarcar en Vaca Muerta?
+            Nosotros tenemos la solución y queremos ayudarte!
           </h2>
-          <p className="mt-4 text-pretty text-base leading-relaxed text-muted-foreground">
-            Nosotros tenemos la solución y queremos ayudarte
-          </p>
         </div>
-
         <div className="mt-12 grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
           {/* Columna izquierda: video explicativo de YouTube */}
           <div className="flex flex-col">
@@ -24,7 +20,7 @@ export function ServiceSection() {
             <div className="relative mt-4 aspect-video overflow-hidden rounded-2xl border border-border bg-muted shadow-sm">
               <iframe
                 className="absolute inset-0 h-full w-full"
-                src={`https://www.youtube.com/embed/${siteConfig.youtubeId}`}
+                src={`https://www.youtube.com/embed/${siteConfig.youtubeId}?start=307&end=435&controls=0`}
                 title="Conocé la Carpeta Bancaria Ampliada"
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
@@ -49,7 +45,7 @@ export function ServiceSection() {
               Dá el primer paso hacia tu financiamiento
             </h3>
             <p className="mx-auto mt-3 max-w-md text-pretty text-center text-base leading-relaxed text-muted-foreground">
-              Completa el formulario, agendamos una sesión y te cuento como lo hacemos!!
+              Completá el formulario, agendamos una sesión y te cuento como lo hacemos!
             </p>
             <a
               href={siteConfig.formUrl}

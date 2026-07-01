@@ -40,7 +40,7 @@ export function SiteFooter() {
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
               Especialistas en preparar a las PyMEs de todo el país para acceder a
-              financiamiento bancario y garantizado con la Carpeta Bancaria Ampliada.
+              financiamiento bancario y garantizado con la Carpeta Crediticia Ampliada.
             </p>
           </div>
 
