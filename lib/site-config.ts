@@ -1,6 +1,6 @@
 export const siteConfig = {
   studioName: "Estudio Contable Patricia Perez",
-  serviceName: "Carpeta Bancaria Ampliada",
+  serviceName: "Carpeta Crediticia Ampliada",
   // Reemplazar con datos reales
   phone: "+54 9 299 413 9806",
   email: "estudiopperez@gmail.com",
