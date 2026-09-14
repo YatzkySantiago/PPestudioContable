@@ -6,7 +6,6 @@ const painPoints = [
     icon: AlertTriangle,
     text: "Muchas Pymes ignoran herramientas de financiamiento como las Sociedades de Garantías Recíprocas (SGR), Fondos de Garantías Provinciales y Convenios Provinciales de tasas preferenciales.",
     image: "/pain1A.webp",
-    imageTop: "/pain1B.webp",
     alt: "Equipos de trabajo de Pymes de servicios realizando sus tareas",
   },
   {
@@ -48,16 +47,6 @@ export function PainPointsSection() {
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
                 />
-                {item.imageTop && (
-                  <Image
-                    src={item.imageTop || "/placeholder.svg"}
-                    alt=""
-                    aria-hidden="true"
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    className="animate-pain-crossfade object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-                  />
-                )}
                 <div className="absolute left-3 top-3 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-md transition-colors duration-300 group-hover:bg-accent group-hover:text-accent-foreground">
                   <item.icon className="h-5 w-5" />
                 </div>

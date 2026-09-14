@@ -10,7 +10,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Carpeta Bancaria Ampliada | Estudio Contable Patricia Perez',
+  title: 'Carpeta Crediticia Ampliada | Estudio Contable Patricia Perez',
   description:
     'Preparamos y optimizamos la documentación financiera de tu Pyme para acceder ágilmente a créditos bancarios y financiamiento a través de SGR en Vaca Muerta.',
   generator: 'v0.app',

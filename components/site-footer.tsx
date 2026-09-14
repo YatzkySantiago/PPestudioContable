@@ -39,8 +39,7 @@ export function SiteFooter() {
               </span>
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
-              Especialistas en preparar a las PyMEs de todo el país para acceder a
-              financiamiento bancario y garantizado con la Carpeta Crediticia Ampliada.
+              Especialistas en preparar a las pymes de la cadena de valor del Oil & Gas para acceder a financiamiento bancario y garantizado con la Carpeta Crediticia Ampliada.
             </p>
           </div>
 
